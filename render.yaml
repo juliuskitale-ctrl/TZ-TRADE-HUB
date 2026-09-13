@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: tz-trade-hub
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: APP_NAME
+        value: TZ Trade Hub
+      - key: NODE_ENV
+        value: production
+      - key: CLICKPESA_BASE_URL
+        value: https://api.clickpesa.com/third-parties
+      - key: APP_BASE_URL
+        value: https://tz-trade-hub.onrender.com
+      # DO NOT put secret values in this file.
+      # Add these in Render Dashboard -> Service -> Environment:
+      # CLICKPESA_CLIENT_ID
+      # CLICKPESA_API_KEY

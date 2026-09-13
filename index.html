@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TZ Trade Hub</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+    h1 { font-size: 1.4rem; }
+    label { display: block; margin-top: 12px; font-weight: 600; }
+    input { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+    button { margin-top: 16px; padding: 10px 16px; cursor: pointer; }
+    #status { margin-top: 16px; padding: 12px; border-radius: 6px; background: #f2f2f2; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>TZ Trade Hub — Checkout</h1>
+
+  <label for="amount">Amount (TZS)</label>
+  <input id="amount" type="number" placeholder="e.g. 15000" />
+
+  <label for="phone">Mobile money phone number</label>
+  <input id="phone" type="text" placeholder="e.g. 255712345678" />
+
+  <button id="pay-btn">Pay with Mobile Money</button>
+
+  <div id="status"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
